@@ -13,7 +13,7 @@ if (/^win/.test(process.platform)) {
 } else if (/darwin/.test(process.platform)) {
   isMac = true;
   executablePath = '/Applications/Calculator.app';
-} else if (/linux/.test(process.platform)) {
+} else if (/linux|freebsd/.test(process.platform)) {
   executablePath = path.resolve(path.join('./tests/executables', 'hv3-linux-x86'));
 }
 

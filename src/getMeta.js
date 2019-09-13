@@ -9,7 +9,7 @@ module.exports = function getMeta() {
     meta.isMac = true;
   } else if (/^win/.test(process.platform)) {
     meta.isWindows = true;
-  } else if (/linux/.test(process.platform)) {
+  } else if (/linux|freebsd/.test(process.platform)) {
     meta.isLinux = true;
   }
 
